@@ -5,4 +5,10 @@
   <a routerLink="/dashboard">Cronometer</a>
 </nav>
 <router-outlet></router-outlet>
-<app-messages></app-messages>
+<!-- <app-messages></app-messages> -->
+<h4>Firebase Elements</h4>
+<ul>
+  <li *ngFor="let recipe of recipes | async">
+    <pre>{{recipe.name}}</pre>
+  </li>
+</ul>

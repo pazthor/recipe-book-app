@@ -2,10 +2,19 @@
   <h2>{{recipe.name | uppercase}} Details</h2>
   <div><span>id: </span>{{recipe.id}}</div>
   <div>
-    <label>name:
+    <label>Name:
       <input [(ngModel)]="recipe.name" placeholder="name"/>
     </label>
+    <br>
+    <label>Description:
+      <input [(ngModel)]="recipe.description" placeholder="description"/>
+    </label>
+    <br>
+    <label>Cook Time (minutes):
+      <input [(ngModel)]="recipe.cook_time" placeholder="cook time"/>
+    </label>
   </div>
+  <button (click)="goBack()">GO TO CRONOMETER</button>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
 </div>
